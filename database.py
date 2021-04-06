@@ -3,7 +3,7 @@ import psycopg2
 
 def store_password(password,user_email,username,url,app_name):
   
-  connection = psycopg2.connect(dbname='postgres',user='postgres',password='3000')
+  connection = psycopg2.connect(dbname='postgres',user='postgres',password='Password')
   cursor=connection.cursor() 
 
   query="INSERT INTO database (password,user_email,username,url,app_name) VALUES (%s,%s,%s,%s,%s)"
